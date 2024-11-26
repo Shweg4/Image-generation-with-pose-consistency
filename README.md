@@ -14,9 +14,9 @@ Stable Diffusion 1.5 + ControlNet (using human pose)
 
 Right now you need to input an image and then the Openpose will detect the pose for you.
 
-![Groud truth/image](images/0.png)
+![Groud truth/image](images/basketball_player.jpg)
 
-![Detected pose/ Conditional image](images/1.png)
+![Detected pose/ Conditional image](images/conditional_image.png)
 
-![A white female playing basketball in a court ](images/2.png)
+![A white female playing basketball in a court ](images/female.png)
 
