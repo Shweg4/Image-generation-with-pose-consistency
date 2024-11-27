@@ -180,25 +180,19 @@ The result displayed below is a **collage of the ground truth image and the corr
   <p><strong>Summary:</strong> This chart represents the final evaluation results combining metrics like PCK, SSIM, and sharpness. The overall performance highlights the potential of ControlNet with Pose SD1.5 in generating pose-guided images. While the cherrypicked result demonstrates its strengths, further work is required to ensure consistency across all outputs.</p>
 </div>
 
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 510.47.03    Driver Version: 510.47.03    CUDA Version: 11.6     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  Tesla V100-SXM2...  On   | 00000000:00:1E.0 Off |                    0 |
-| N/A   35C    P0    24W / 300W |      0MiB / 16384MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|  No running processes found                                                 |
-+-----------------------------------------------------------------------------+
+## Compute Power Used
+
+The evaluations and model generation were performed using the following compute setup:
+
++-----------------------------------------------------------------------------+ | NVIDIA-SMI 510.47.03 Driver Version: 510.47.03 CUDA Version: 11.6 | |-------------------------------+----------------------+----------------------+ | GPU Name Persistence-M| Bus-Id Disp.A | Volatile Uncorr. ECC | | Fan Temp Perf Pwr:Usage/Cap| Memory-Usage | GPU-Util Compute M. | | | | MIG M. | |===============================+======================+======================| | 0 Tesla V100-SXM2... On | 00000000:00:1E.0 Off | 0 | | N/A 35C P0 24W / 300W | 0MiB / 16384MiB | 0% Default | | | | N/A | +-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+ | Processes: | | GPU GI CI PID Type Process name GPU Memory | | ID ID Usage | |=============================================================================| | No running processes found | +-----------------------------------------------------------------------------+
+
+
+**Summary**:
+- The computations were carried out on an **NVIDIA Tesla V100-SXM2 GPU**, with **16 GB of memory**.
+- **CUDA Version:** 11.6
+- The GPU's maximum power consumption is **300W**, and the temperature during evaluations was **35°C**.
 
 # Citation
 
