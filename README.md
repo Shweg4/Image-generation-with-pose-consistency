@@ -161,6 +161,21 @@ The table below summarizes the results of evaluation metrics across ground truth
   </tr>
 </table>
 
+## Results
+
+### ControlNet with Pose SD1.5
+
+ControlNet is a neural network architecture that enhances pre-trained diffusion models by conditioning their outputs on specific input data. In this evaluation, **Pose SD1.5** was used to guide the generation of images based on pose estimations. This allows for fine-grained control over the generated outputs, ensuring alignment with the desired pose and structure. 
+
+The result displayed below is a **collage of the ground truth image and the corresponding generated images** (cherrypicked output). These generated images are conditioned on the required attributes, such as pose alignment, structural similarity, and image sharpness. This collage serves as a visual representation of the model’s capability to generate pose-guided images.
+
+<div style="text-align: center;">
+  <h3>Final Evaluation Results</h3>
+  <img src="collage_example.png" alt="Final Evaluation Results" width="600">
+  <p><strong>Summary:</strong> This chart represents the final evaluation results combining metrics like PCK, SSIM, and sharpness. The overall performance highlights the potential of ControlNet with Pose SD1.5 in generating pose-guided images. While the cherrypicked result demonstrates its strengths, further work is required to ensure consistency across all outputs.</p>
+</div>
+
+
 # Citation
 
     @misc{zhang2023adding,
