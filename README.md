@@ -112,3 +112,35 @@ Once the evaluation is complete, the output will include:
 ---
 
 This structure ensures clear organization and accurate evaluation of generated images against ground truth references. Let me know if you need help setting up or running the scripts!
+
+Once the environment is set up, you can run the respective Python scripts for evaluation:
+
+    - To calculate **SSIM (Structural Similarity Index)**, run:
+      ```bash
+      python ssim.py
+      ```
+
+    - To calculate **PCK (Percentage of Correct Keypoints)**, run:
+      ```bash
+      python pck.py
+      ```
+
+    - To calculate **Sharpness**, run:
+      ```bash
+      python sharpness.py
+      ```
+
+Each script outputs results in both tabular and graphical formats for easy analysis.
+
+
+# Citation
+
+    @misc{zhang2023adding,
+      title={Adding Conditional Control to Text-to-Image Diffusion Models}, 
+      author={Lvmin Zhang and Anyi Rao and Maneesh Agrawala},
+      booktitle={IEEE International Conference on Computer Vision (ICCV)}
+      year={2023},
+    }
+
+[Arxiv Link](https://arxiv.org/abs/2302.05543)
+https://github.com/lllyasviel/ControlNet.git
