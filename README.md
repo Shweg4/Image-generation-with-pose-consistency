@@ -161,6 +161,10 @@ The table below summarizes the results of evaluation metrics across ground truth
   </tr>
 </table>
 
+## Note
+
+The `results` folder contains the outputs from the evaluation scripts, including charts and summaries of the computed metrics. The `source` and `target` folders house the custom data scraped from the web, with `source` representing the input data and `target` representing the desired outputs for comparison.
+
 ## Results
 
 ### ControlNet with Pose SD1.5
