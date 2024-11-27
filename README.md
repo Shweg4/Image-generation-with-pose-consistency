@@ -8,7 +8,7 @@ First create a new conda environment
     conda env create -f environment.yaml
     conda activate control
 
-All models and detectors can be downloaded from [Hugging Face page](https://huggingface.co/lllyasviel/ControlNet). Make sure that SD models are put in "ControlNet/models" and detectors are put in "ControlNet/annotator/ckpts". Make sure that you download all necessary pretrained weights and detector models from that Hugging Face page, including HED edge detection model, Midas depth estimation model, Openpose, and so on . 
+All models and detectors can be downloaded from [Hugging Face page](https://huggingface.co/lllyasviel/ControlNet). Make sure that SD models are put in "ControlNet/models" and detectors are put in "ControlNet/annotator/ckpts". Make sure that you download all necessary pretrained weights and detector models from that Hugging Face page, including HED edge detection model, Midas depth estimation model, Openpose, and so on. 
 
 Stable Diffusion 1.5 + ControlNet (using human pose)
 
@@ -144,17 +144,17 @@ The table below summarizes the results of evaluation metrics across ground truth
   </tr>
   <tr>
     <td>
-      <img src="pck_summary_chart.png" alt="Average PCK Chart" width="400">
+      <img src="images/pck_summary_chart.png" alt="Average PCK Chart" width="400">
       <p><strong>Summary:</strong> This graph illustrates the Percentage of Correct Keypoints (PCK) for each ground truth image. PCK evaluates the alignment of keypoints between the ground truth and generated images. Higher PCK values indicate better alignment.</p>
       <p><strong>Inference:</strong> Some ground truth images, such as <em>basketball_player.jpg</em>, show consistently high alignment, whereas others like <em>handstand.jpg</em> exhibit lower PCK values, suggesting room for improvement in those cases.</p>
     </td>
     <td>
-      <img src="sharpness_comparison_chart.png" alt="Sharpness Comparison Chart" width="400">
+      <img src="images/sharpness_comparison_chart.png" alt="Sharpness Comparison Chart" width="400">
       <p><strong>Summary:</strong> This graph compares the sharpness of ground truth images and the average sharpness of their generated counterparts. Sharpness is measured using the Laplacian variance method.</p>
       <p><strong>Inference:</strong> Generated images generally exhibit higher sharpness than ground truth images, as seen in cases like <em>wall_climbing2.jpg</em>. However, this may not always correspond to visual quality, as excessive sharpness can introduce noise.</p>
     </td>
     <td>
-      <img src="ssim_comparison_chart.png" alt="Average SSIM Chart" width="400">
+      <img src="images/ssim_comparison_chart.png" alt="Average SSIM Chart" width="400">
       <p><strong>Summary:</strong> This graph shows the Structural Similarity Index (SSIM) for each ground truth image, comparing how closely generated images resemble their respective ground truth.</p>
       <p><strong>Inference:</strong> SSIM values vary significantly across images. While <em>highjump.png</em> achieves a high SSIM score, suggesting good structural resemblance, others like <em>sunset.jpg</em> score lower, indicating discrepancies in generated outputs.</p>
     </td>
