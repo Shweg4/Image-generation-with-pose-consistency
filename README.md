@@ -61,7 +61,25 @@ The following metrics are used for evaluation:
 ## Folder Structure
 Organize your data in the following directory structure to ensure that evaluation scripts run correctly:
 
-evaluation/ ├── ground_truth/ │ ├── example1.jpg │ ├── example2.jpg │ └── example3.jpg ├── generated/ │ ├── example1/ │ │ ├── gen1.jpg │ │ ├── gen2.jpg │ │ └── gen12.jpg │ ├── example2/ │ │ ├── gen1.jpg │ │ ├── gen2.jpg │ │ └── gen12.jpg │ └── example3/ │ ├── gen1.jpg │ ├── gen2.jpg │ └── gen12.jpg
+evaluation/
+├── ground_truth/
+│   ├── example1.jpg
+│   ├── example2.jpg
+│   └── example3.jpg
+├── generated/
+│   ├── example1/
+│   │   ├── gen1.jpg
+│   │   ├── gen2.jpg
+│   │   └── gen12.jpg
+│   ├── example2/
+│   │   ├── gen1.jpg
+│   │   ├── gen2.jpg
+│   │   └── gen12.jpg
+│   └── example3/
+│       ├── gen1.jpg
+│       ├── gen2.jpg
+│       └── gen12.jpg
+
 
 
 ### Description of Folders
