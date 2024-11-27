@@ -171,7 +171,7 @@ The result displayed below is a **collage of the ground truth image and the corr
 
 <div style="text-align: center;">
   <h3>Final Evaluation Results</h3>
-  <img src="collage_example.png" alt="Final Evaluation Results" width="600">
+  <img src="images/collage_example.png" alt="Final Evaluation Results" width="600">
   <p><strong>Summary:</strong> This chart represents the final evaluation results combining metrics like PCK, SSIM, and sharpness. The overall performance highlights the potential of ControlNet with Pose SD1.5 in generating pose-guided images. While the cherrypicked result demonstrates its strengths, further work is required to ensure consistency across all outputs.</p>
 </div>
 
