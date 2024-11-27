@@ -186,4 +186,4 @@ The result displayed below is a **collage of the ground truth image and the corr
     }
 
 [Arxiv Link](https://arxiv.org/abs/2302.05543)
-https://github.com/lllyasviel/ControlNet.git
+https://github.com/lllyasviel/ControlNet.gi
