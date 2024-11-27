@@ -1,7 +1,7 @@
 # myolab-takehome-Shweg4
 MyoLab take-home assignment: Image generation with pose consistency 
 
-These are the steps  to be followed to run the Controlnet model with openpose 
+These are the steps  to be followed to run the Controlnet model with OpenPose:
 
 First, we need to create a new conda environment
 
