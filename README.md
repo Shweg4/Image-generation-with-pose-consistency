@@ -14,7 +14,7 @@ Stable Diffusion 1.5 + ControlNet (using human pose)
 
     python gradio_pose2image.py
 
-For a public link give (share = True) while launcging the gradio
+For a public link give (share = True) while launcging the gradio - block.launch(server_name='0.0.0.0',share=True)
 You need to input an image for the openpose to detetec the pose.
 
 <table>
