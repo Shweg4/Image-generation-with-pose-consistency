@@ -81,7 +81,6 @@ evaluation/
 │       └── gen12.jpg
 
 
-
 ### Description of Folders
 1. **`ground_truth/`**:
    - Contains the reference images that serve as the ground truth.
