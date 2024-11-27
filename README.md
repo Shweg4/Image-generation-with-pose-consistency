@@ -1,9 +1,9 @@
 # myolab-takehome-Shweg4
 MyoLab take-home assignment: Image generation with pose consistency 
 
-These are the steps you would have to follow to run the Controlnet model with openpose 
+These are the steps  to be followed to run the Controlnet model with openpose 
 
-First create a new conda environment
+First, we need to create a new conda environment
 
     conda env create -f environment.yaml
     conda activate control
@@ -15,7 +15,7 @@ Stable Diffusion 1.5 + ControlNet (using human pose)
     python gradio_pose2image.py
 
 For a public link give (share = True) while launcging the gradio - block.launch(server_name='0.0.0.0',share=True)
-You need to input an image for the openpose to detetec the pose.
+You need to input an image for the openpose to detect the pose.
 
 <table>
   <tr>
