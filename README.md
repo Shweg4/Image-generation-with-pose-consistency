@@ -132,6 +132,34 @@ Once the environment is set up, you can run the respective Python scripts for ev
 
 Each script outputs results in both tabular and graphical formats for easy analysis.
 
+## Evaluation Metrics Summary
+
+The table below summarizes the results of evaluation metrics across ground truth and generated images:
+
+<table>
+  <tr>
+    <th>Average PCK for Each Ground Truth</th>
+    <th>Comparison of Ground Truth and Generated Image Sharpness</th>
+    <th>Average SSIM for Each Ground Truth</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="pck_summary_chart.png" alt="Average PCK Chart" width="400">
+      <p><strong>Summary:</strong> This graph illustrates the Percentage of Correct Keypoints (PCK) for each ground truth image. PCK evaluates the alignment of keypoints between the ground truth and generated images. Higher PCK values indicate better alignment.</p>
+      <p><strong>Inference:</strong> Some ground truth images, such as <em>basketball_player.jpg</em>, show consistently high alignment, whereas others like <em>handstand.jpg</em> exhibit lower PCK values, suggesting room for improvement in those cases.</p>
+    </td>
+    <td>
+      <img src="sharpness_comparison_chart.png" alt="Sharpness Comparison Chart" width="400">
+      <p><strong>Summary:</strong> This graph compares the sharpness of ground truth images and the average sharpness of their generated counterparts. Sharpness is measured using the Laplacian variance method.</p>
+      <p><strong>Inference:</strong> Generated images generally exhibit higher sharpness than ground truth images, as seen in cases like <em>wall_climbing2.jpg</em>. However, this may not always correspond to visual quality, as excessive sharpness can introduce noise.</p>
+    </td>
+    <td>
+      <img src="ssim_comparison_chart.png" alt="Average SSIM Chart" width="400">
+      <p><strong>Summary:</strong> This graph shows the Structural Similarity Index (SSIM) for each ground truth image, comparing how closely generated images resemble their respective ground truth.</p>
+      <p><strong>Inference:</strong> SSIM values vary significantly across images. While <em>highjump.png</em> achieves a high SSIM score, suggesting good structural resemblance, others like <em>sunset.jpg</em> score lower, indicating discrepancies in generated outputs.</p>
+    </td>
+  </tr>
+</table>
 
 # Citation
 
