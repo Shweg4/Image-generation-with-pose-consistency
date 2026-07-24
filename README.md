@@ -1,5 +1,6 @@
-# myolab-takehome-Shweg4
-MyoLab take-home assignment: Image generation with pose consistency 
+# Image Generation with Pose Consistency
+
+This project explores pose-guided image generation using ControlNet with Stable Diffusion 1.5, conditioning outputs on human pose (OpenPose) to control the structure of generated images. It also includes an evaluation pipeline that measures how well generated images preserve the target pose and visual quality, using sharpness, SSIM, and PCK metrics against ground truth images.
 
 These are the steps  to be followed to run the Controlnet model with OpenPose:
 
